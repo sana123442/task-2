@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size-base: 16px;
+}
+
+body {
+    font-size: var(--font-size-base);
+    color: var(--primary-color);
+}
+/* Mobile First Approach */
+@media (min-width: 576px) {
+    /* Styles for small screens (phones in landscape mode) */
+}
+
+@media (min-width: 768px) {
+    /* Styles for medium screens (tablets) */
+}
+
+@media (min-width: 992px) {
+    /* Styles for large screens (desktops) */
+}
+
+@media (min-width: 1200px) {
+    /* Styles for extra-large screens (large desktops) */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 100%; /* Adjusts to fill available space */
+}
+
+@media (min-width: 768px) {
+    .item {
+        flex: 1 1 48%; /* Two items per row on medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .item {
+        flex: 1 1 32%; /* Three items per row on large screens */
+    }
+}
+h1 {
+    font-size: 5vw;
+}
+<img src="image-small.jpg"
+     srcset="image-medium.jpg 768w, image-large.jpg 1200w"
+     alt="Responsive Image">
+
+
+
+
